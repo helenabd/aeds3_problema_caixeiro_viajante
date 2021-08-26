@@ -12,5 +12,5 @@ if __name__ == '__main__':
     tAnd = time.time() - tInit
     #rota = algoritmo_refinamento.twoOpt_matriz(S, G, (20 - tAnd), custo)
     rota = algoritmo_refinamento.troca_matriz(S, G, (20 - tAnd), custo)
-    print('%.2f ' %rota[1])
+    print('%.1f ' %rota[1])
     print(rota[0])
