@@ -98,13 +98,12 @@ def troca_matriz(S, matrizAdj, tempoDisponivel, custo):
                 S = Sc.copy()
                 custo = custo_troca
 
+            cont += 1
+
         fim = time.time()
         tempoDisponivel -= (fim - inicio)
 
-        #Adicionar um contador para comparar a implementação usando lista e matriz de adj
-        cont += 1
-
-    return S, custo
+    return S, custo, cont
 
 
 def twoOpt_matriz(S, matrizAdj, tempoDisponivel, custo):
@@ -155,4 +154,4 @@ def twoOpt_matriz(S, matrizAdj, tempoDisponivel, custo):
         #Adicionar um contador para comparar a implementação usando lista e matriz de adj
         cont += 1
 
-    return S, custo
+    return S, custo, cont
